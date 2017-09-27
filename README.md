@@ -25,5 +25,6 @@ Il s'agit d'une solution Visual Studio, la solution se décompose comme suit :
 
 - Le projet AppWeb.Tests contient un ensemble de test unitaires permettant de vérifier la validité du projet AppWeb.
 
-### Ce n'est pas fini, il se peut que j'ajoute encore un projet, pour par exemple, une API relative à la DB permettant ainsi de créer une couche d'abstraction, appelés par exemple "Data" et "Data.Tests".
-Les autres projets utiliseront celui-ci intensivement, autant dire qu'il s'agira d'une des bases de la solution cartotree.
+### Datas & Datas.Tests
+ - Le projet Datas est une base très importante de la solution. C'est ici qu'on codera l'API relative à la DB permettant ainsi de créer une couche d'abstraction. Les autres projets utiliseront ce projet intensivement, autant dire qu'il s'agira d'un des piliers de la solution cartotree.
+ - Le projet Datas.Tests permet de tester la validité du projet Datas.
