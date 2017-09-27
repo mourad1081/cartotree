@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppWeb", "cartotree\AppWeb.csproj", "{2C8F281E-B7D1-4411-A28F-4E277E976E9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppWeb", "AppWeb\AppWeb.csproj", "{2C8F281E-B7D1-4411-A28F-4E277E976E9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppWeb.Tests", "cartotree.Tests\AppWeb.Tests.csproj", "{9C657B00-6171-464C-96EA-10819B4FF238}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppWeb.Tests", "AppWeb.Tests\AppWeb.Tests.csproj", "{9C657B00-6171-464C-96EA-10819B4FF238}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{E745E2C6-A442-4AD8-9D30-FD1938AA8993}"
 EndProject
