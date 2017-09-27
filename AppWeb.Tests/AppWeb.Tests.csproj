@@ -91,7 +91,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\cartotree\AppWeb.csproj">
+    <ProjectReference Include="..\AppWeb\AppWeb.csproj">
       <Project>{2C8F281E-B7D1-4411-A28F-4E277E976E9E}</Project>
       <Name>AppWeb</Name>
     </ProjectReference>

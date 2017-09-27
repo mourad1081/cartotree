@@ -10,6 +10,7 @@ namespace Business.Test
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
