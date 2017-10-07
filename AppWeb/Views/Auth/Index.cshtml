@@ -1,0 +1,61 @@
+﻿@model cartotree.Models.User
+@{
+    ViewBag.Title = "Log In";
+}
+
+
+<div id="login-view">
+    <div class="container">
+        <div id="login-container" class="row">
+            <div class="col-lg-6">
+                <h1 class="h1">My cartotree account</h1>
+                <p>
+                    Tincidunt integer eu augue augue nunc elit dolor, luctus
+                    placerat scelerisque euismod, iaculis eu lacus nunc mi elit,
+                    vehicula ut laoreet ac, aliquam sit amet justo nunc tempor,
+                    metus vel.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <!-- On peut soit taper <form>...</form>, 
+                    soit le fair de cette manière -->
+                @using (Html.BeginForm("Login", "Auth", FormMethod.Post))
+                {
+                    <!-- TODO: Utiliser les helpers LabelFor, etc. -->
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fa fa-envelope-o"></i> Email address
+                        </label>
+                        @Html.TextBoxFor(u => u.Email, new {
+                            @class = "form-control",
+                            type = "email",
+                            placeholder = "Enter your email address"
+                        })
+                        <small id="emailHelp" class="form-text text-muted">
+                            We'll never share your email with anyone else.
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fa fa-unlock-alt"></i> Password</label>
+                        @Html.TextBoxFor(u => u.Password, new {
+                            @class = "form-control",
+                            type = "password",
+                            placeholder = "Enter your password"
+                        })
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                }
+            </div>
+        </div>
+        <hr class="hr-text" data-content="Join us on">
+        <div class="row text-center">
+            <img height="200" src="~/Content/imgs/logo.png" alt="Logo C2T" />
+        </div>
+    </div>
+</div>

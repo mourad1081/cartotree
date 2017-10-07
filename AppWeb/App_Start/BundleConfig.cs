@@ -20,12 +20,14 @@ namespace cartotree
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                             /*** Make sure popper.js is pointing to umd ***/
+                             "~/Scripts/umd/popper.js",
+                             "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                                        "~/Content/bootstrap.css",
+                                        "~/Content/font-awesome.min.css",
+                                        "~/Content/site.min.css"));
         }
     }
 }

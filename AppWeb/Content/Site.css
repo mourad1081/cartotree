@@ -1,24 +1,83 @@
-﻿body {
+﻿div[id*="-view"] {
+  min-height: 100vh; }
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Slab', serif !important; }
+
+html, body {
+  overflow-x: hidden; }
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5; }
+  .hr-text:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px; }
+  .hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: #818078;
+    border-radius: 25%;
+    background-color: #fcfcfa; }
+
+img.img-circle {
+  border-radius: 50%; }
+
+.bg-light-green {
+  background-color: #e5eada; }
+
+.container-fluid {
+  padding: 0; }
+
+#login-view {
+  background: #779f57;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #cdebb4 0%, #779f57 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #cdebb4 0%, #779f57 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #cdebb4 0%, #779f57 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  padding: 20px; }
+  #login-view #login-container {
+    padding: 20px;
     padding-top: 50px;
-    padding-bottom: 20px;
-}
+    padding-bottom: 50px;
+    background-color: white;
+    box-shadow: 0 1px 5px 1px grey; }
+    #login-view #login-container div.col-lg-6:first-of-type {
+      border-right: solid #EEE 1px; }
+  #login-view img {
+    margin-top: 20px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto; }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+#home-view #home-header img {
+  height: 32px; }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
+#home-view #home-main #home-sidebar {
+  height: calc(100vh - 64px);
+  border-right: solid #d3cdcd 1px;
+  padding: 20px; }
+  #home-view #home-main #home-sidebar ul {
+    list-style-type: none; }
+    #home-view #home-main #home-sidebar ul li {
+      list-style-type: none;
+      padding: 10px; }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
