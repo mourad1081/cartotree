@@ -1,0 +1,32 @@
+﻿$height-menu: 64px;
+
+#home-view {
+    #home-header {
+        img {
+            height: 32px;
+        }
+    }
+
+    #home-main {
+        #home-sidebar {
+            height: calc(100vh - #{$height-menu});
+            border-right: solid #d3cdcd 1px;
+            padding: 20px;
+
+            ul {
+                list-style-type: none;
+                li {
+                    list-style-type: none; // < IE9
+                    padding: 10px;
+
+                    &:hover {
+
+                    }
+                }
+            }
+        }
+
+        #home-main-content {
+        }
+    }
+}

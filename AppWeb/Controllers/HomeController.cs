@@ -10,7 +10,10 @@ namespace cartotree.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            if (TempData["isAuth"] != null && (bool) TempData["isAuth"])
+                return View();
+            else
+                return RedirectToAction("Index", "Auth");
         }
 
         public ActionResult About()

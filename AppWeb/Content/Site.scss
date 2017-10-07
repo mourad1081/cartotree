@@ -1,0 +1,9 @@
+﻿// On importe le SCSS contenant le thème principal utilisé
+@import "cartotree-core.scss";
+
+// On importe le SCSS corrigeant des bugs des librairies utilisées
+@import "fixes.scss";
+
+// On importe tous les SCSS spécifiques aux vues
+@import "../Views/Auth/Auth.scss";
+@import "../Views/Home/Home.scss";
