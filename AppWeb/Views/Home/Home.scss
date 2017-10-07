@@ -11,16 +11,18 @@
         #home-sidebar {
             height: calc(100vh - #{$height-menu});
             border-right: solid #d3cdcd 1px;
-            padding: 20px;
-
+            margin-top: 20px;
+            text-align: center;
             ul {
                 list-style-type: none;
+                padding-left: 10px;
                 li {
                     list-style-type: none; // < IE9
-                    padding: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
 
                     &:hover {
-
+                        background-color: #EEE;
                     }
                 }
             }
