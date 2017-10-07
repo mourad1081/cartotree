@@ -80,4 +80,6 @@ img.img-circle {
     #home-view #home-main #home-sidebar ul li {
       list-style-type: none;
       padding: 10px; }
+      #home-view #home-main #home-sidebar ul li:hover {
+        background-color: #EEE; }
 
