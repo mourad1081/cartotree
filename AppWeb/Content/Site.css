@@ -74,12 +74,15 @@ img.img-circle {
 #home-view #home-main #home-sidebar {
   height: calc(100vh - 64px);
   border-right: solid #d3cdcd 1px;
-  padding: 20px; }
+  margin-top: 20px;
+  text-align: center; }
   #home-view #home-main #home-sidebar ul {
-    list-style-type: none; }
+    list-style-type: none;
+    padding-left: 10px; }
     #home-view #home-main #home-sidebar ul li {
       list-style-type: none;
-      padding: 10px; }
+      padding-top: 10px;
+      padding-bottom: 10px; }
       #home-view #home-main #home-sidebar ul li:hover {
         background-color: #EEE; }
 
